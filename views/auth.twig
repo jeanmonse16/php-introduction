@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Login your user</h1>
+    {% block content %}
+
+  <divclass="alert alert-primary"role="alert">
+    {{ responseMessage }}
+  </div>
+  <form action="../login"method="post"enctype="multipart/form-data">
+
+  {% endblock %}
+
+
+
+
+
+      <label for="">email:</label>
+      <input type="email" name="email" value=""><br>
+      <label for="">password:</label>
+      <input type="password" name="password" value=""><br>
+      <button type="submit" name="button">login</button>
+
+    </form>
+  </body>
+</html>
